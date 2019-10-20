@@ -70,7 +70,7 @@ export default class Main extends Component {
         return (<ul className={styles.list}>
             <div style={{
                 height: (balancePos <= 0) ? '32px' : '66px',
-                transform: `translateY(${(balancePos > 0 ? balancePos - 1 : 0) * (32 + 2)}px)`
+                transform: `translateY(${(balancePos > 0 ? balancePos - 1 : 0) * (32 + 3)}px)`
             }}
                  className={styles.balance}/>
             {list.map((item, index) => (

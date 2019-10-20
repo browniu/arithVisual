@@ -2,7 +2,7 @@
 > 算法可视化
 
 ## [demo](https://browniu.github.io/arithVisual/)
-![demo](./static/%20bubble.gif)
+![demo](./static/bubble2.gif)
 
 ## 算法实现
 
