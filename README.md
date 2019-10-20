@@ -1,7 +1,10 @@
 # arithVisual
 > 算法可视化
 
-## 冒泡排序
+
+## 算法实现
+
+### 冒泡排序
 ```JavaScript
 const bubbleSort = (array) => {
     for (let i = array.length - 1; i >= 0; i--) {
@@ -15,4 +18,24 @@ const bubbleSort = (array) => {
     }
     return array
 };
+```
+
+## 可复用逻辑
+
+### 生成指定范围内指定长度的无重复数组
+```JavaScript
+const randomArraySingleInRange = (min, max, n = 1) => {
+        if (max - min < n) max = min + n;
+        const array = [];
+        const creatItem = () => {
+            const item = Math.floor(Math.random() * (max - min + 1)) + min;
+            if (array.includes(item)) creatItem();
+            else {
+                array.push(item);
+                if (array.length < n) creatItem();
+            }
+        };
+        creatItem();
+        return array;
+    };
 ```
